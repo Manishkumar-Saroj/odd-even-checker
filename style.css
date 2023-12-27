@@ -1,0 +1,103 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #F6F6F6; */
+}
+
+body {
+    background-color: #ffffff;
+    background-image: radial-gradient(circle at 2% 2%, #cccccc 1px, transparent 1px),
+                      radial-gradient(circle at 2% 98%, #cccccc 1px, transparent 1px),
+                      radial-gradient(circle at 98% 2%, #cccccc 1px, transparent 1px),
+                      radial-gradient(circle at 98% 98%, #cccccc 1px, transparent 1px);
+    background-size: 4% 4%;
+    background-position: 0 0, 0 100%, 100% 0, 100% 100%;
+}
+
+
+#container {
+    background-color: #F6F7C4;
+    box-shadow: 10px 10px #EE2B47;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    width: 80vw;
+    height: 50vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-style: oblique;
+}
+
+p,
+input,
+button {
+    width: 70vw;
+    height: 9vh;
+    padding: 20px;
+    text-align: center;
+    font-size: larger;
+    border: 2px outset black;
+    border-radius: 10px;
+}
+
+p {
+    background-color: white;
+}
+
+::placeholder {
+    font-size: medium;
+    font-style: italic;
+}
+
+input {
+    padding-bottom: 20px;
+}
+
+button {
+    background-color: #6A7EFC;
+    color: white;
+    transition-duration: 0.4s;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #F96D00;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#operator {
+    display: flex;
+    gap: 6vw;
+}
+
+#operator button {
+    background-color: #EE2B47;
+    width: 32vw;
+    color: white;
+    transition-duration: 0.4s;
+    font-weight: 600;
+}
+
+#operator button:hover {
+    background-color: #FDB827;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
