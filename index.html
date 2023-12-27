@@ -15,9 +15,9 @@
         <input type="number" id="numInput" placeholder="please enter number" oninput="check();" onwheel="handleScroll(event);">
         <button onclick="clearInput();">Clear</button>
         <div id="operator">
-            <button onclick="decrementValue();">-</button>
-            <button onclick="incrementValue();">+</button>  
-        </div>        
+            <button onmousedown="startDecrement();" onmouseup="stopChange();" ontouchstart="startDecrement();" ontouchend="stopChange();">-</button>
+            <button onmousedown="startIncrement();" onmouseup="stopChange();" ontouchstart="startIncrement();" ontouchend="stopChange();">+</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
