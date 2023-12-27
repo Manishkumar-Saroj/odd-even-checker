@@ -1,3 +1,5 @@
+var intervalId; // Variable to store the interval ID
+
 function check() {
     var numInput = document.getElementById("numInput");
     var resultElement = document.getElementById("result");
@@ -39,6 +41,18 @@ function handleScroll(event) {
 
     // Trigger the check function after updating the value
     check();
+}
+
+function startDecrement() {
+    intervalId = setInterval(decrementValue, 100);
+}
+
+function startIncrement() {
+    intervalId = setInterval(incrementValue, 100);
+}
+
+function stopChange() {
+    clearInterval(intervalId);
 }
 
 function incrementValue() {
